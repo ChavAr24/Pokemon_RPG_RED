@@ -7,7 +7,7 @@ import tile.TileManager;
 import javax.swing.*;
 import java.awt.*;
 
-import static main.UI.draw;
+import static main.UI.gp;
 
 public class GamePanel extends JPanel implements Runnable
 {
@@ -29,7 +29,7 @@ public class GamePanel extends JPanel implements Runnable
 
     //SYSTEM
     TileManager tileM = new TileManager(this);
-    KeyHandler KeyH = new KeyHandler();
+    KeyHandler KeyH = new KeyHandler(this);
     public CollisionChecker cChecker = new CollisionChecker(this);
     public ItemSetter aSetter = new ItemSetter(this);
     Sound music = new Sound();
@@ -39,7 +39,12 @@ public class GamePanel extends JPanel implements Runnable
 
     //ENTITY AND OBJECT
     public Player player = new Player(this, KeyH);
-    public SuperItems obj[] = new SuperItems[100];
+    public SuperItems[] obj = new SuperItems[100];
+
+    //GAME STATE
+    public int gameState;
+    public final int playState = 1;
+    public final int pauseState = 2;
 
 
     public GamePanel() {
@@ -55,6 +60,7 @@ public class GamePanel extends JPanel implements Runnable
         aSetter.setObject();
 
         playMusic(0);
+        gameState = playState;
     }
 
     public void startGameThread(){
@@ -95,7 +101,12 @@ public class GamePanel extends JPanel implements Runnable
 
     public void update(){
 
-        player.update();
+        if (gameState == playState){
+            player.update();
+        }
+        if (gameState == pauseState){
+            // Nothing
+        }
     }
 
     public void paintComponent(Graphics g){
@@ -108,9 +119,9 @@ public class GamePanel extends JPanel implements Runnable
         tileM.draw(g2);
 
         //OBJECTS
-        for(int i = 0; i < obj.length; i++){
-            if (obj[i] != null){
-                obj[i].draw(g2, this);
+        for (SuperItems superItems : obj) {
+            if (superItems != null) {
+                superItems.draw(g2, this);
             }
         }
 
@@ -118,7 +129,7 @@ public class GamePanel extends JPanel implements Runnable
         player.draw(g2);
 
         //UI
-        draw(g2);
+        ui.draw(g2);
 
 
         g2.dispose();

@@ -17,12 +17,6 @@ public class Player extends Entity{
     public final int screenX;
     public final int screenY;
 
-    public int hasPotion = 0;
-    public int hasSuperPotion = 0;
-    public int hasPokeball = 0;
-    public int hasMasterball = 0;
-
-
 
     public Player(GamePanel gp, KeyHandler KeyH){
         this.gp = gp;
@@ -118,37 +112,7 @@ public class Player extends Entity{
 
     public void pickUpObject(int i){
         if (i != 999){
-            String objectName = gp.obj[i].name;
 
-            switch (objectName){
-                case "Potion":
-                    gp.playSE(1);
-                    hasPotion++;
-                    gp.obj[i] = null;
-                    gp.ui.showMessage("Potion added to bag.");
-                    break;
-                case "Superpotion":
-                    gp.playSE(1);
-                    hasSuperPotion++;
-                    gp.obj[i] = null;
-                    gp.ui.showMessage("Super Potion added to bag.");
-                    break;
-                case "Pokeball":
-                    gp.playSE(1);
-                    hasPokeball++;
-                    gp.obj[i] = null;
-                    gp.ui.showMessage("Pokeball added to bag.");
-                    break;
-                case "Masterball":
-                    gp.playSE(1);
-                    hasMasterball++;
-                    gp.obj[i] = null;
-                    gp.ui.showMessage("Masterball added to bag.");
-                    UI.gameFinished = true;
-                    gp.stopMusic();
-                    gp.playSE(4);
-                    break;
-            }
         }
     }
     public void draw(Graphics2D g2){
