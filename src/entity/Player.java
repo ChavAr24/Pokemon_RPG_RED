@@ -2,16 +2,12 @@ package entity;
 
 import main.GamePanel;
 import main.KeyHandler;
-import main.UI;
-import main.UtilityTool;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
+
 
 public class Player extends Entity{
-    GamePanel gp;
     KeyHandler KeyH;
 
     public final int screenX;
@@ -19,7 +15,9 @@ public class Player extends Entity{
 
 
     public Player(GamePanel gp, KeyHandler KeyH){
-        this.gp = gp;
+
+        super(gp);
+
         this.KeyH = KeyH;
 
         screenX = gp.screenWidth/2 - (gp.tileSize/2);
@@ -45,27 +43,14 @@ public class Player extends Entity{
     }
 
     public void getPlayerImage(){
-        up1 = setUp("boy_up_1");
-        up2 = setUp("boy_up_2");
-        down1 = setUp("boy_down_1");
-        down2 = setUp("boy_down_2");
-        left1 = setUp("boy_left_1");
-        left2 = setUp("boy_left_2");
-        right1 = setUp("boy_right_1");
-        right2 = setUp("boy_right_2");
-    }
-
-    public BufferedImage setUp(String imageName){
-        UtilityTool uTool = new UtilityTool();
-        BufferedImage image = null;
-        try {
-            image = ImageIO.read(getClass().getResourceAsStream("/player/" + imageName + ".png"));
-            image = uTool.scaledImage(image, gp.tileSize, gp.tileSize);
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-
-        return image;
+        up1 = setUp("/player/boy_up_1");
+        up2 = setUp("/player/boy_up_2");
+        down1 = setUp("/player/boy_down_1");
+        down2 = setUp("/player/boy_down_2");
+        left1 = setUp("/player/boy_left_1");
+        left2 = setUp("/player/boy_left_2");
+        right1 = setUp("/player/boy_right_1");
+        right2 = setUp("/player/boy_right_2");
     }
 
     public void update(){
@@ -86,9 +71,15 @@ public class Player extends Entity{
             collisionOn = false;
             gp.cChecker.checkTile(this);
 
+
 //            CHECK OBJECT COLLISION
             int objIndex = gp.cChecker.checkObject(this, true);
             pickUpObject(objIndex);
+
+//            CHECK NPC COLLISION
+            int npcIndex = gp.cChecker.checkEntity(this, gp.npc);
+            interactNPC(npcIndex);
+
 
 //            IF COLLISION IS FALSE, PLAYER CAN'T MOVE
             if (!collisionOn){
@@ -113,6 +104,12 @@ public class Player extends Entity{
     public void pickUpObject(int i){
         if (i != 999){
 
+        }
+    }
+
+    public void interactNPC(int i){
+        if(i != 999){
+            System.out.println("Collision with NPC");
         }
     }
     public void draw(Graphics2D g2){
