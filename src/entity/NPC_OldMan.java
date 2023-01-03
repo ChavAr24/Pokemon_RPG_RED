@@ -13,6 +13,7 @@ public class NPC_OldMan extends Entity{
         speed = 1;
 
         getImage();
+        setDialogue();
     }
 
     public void getImage(){
@@ -24,6 +25,13 @@ public class NPC_OldMan extends Entity{
         left2 = setUp("/npc/oldman_left_2");
         right1 = setUp("/npc/oldman_right_1");
         right2 = setUp("/npc/oldman_right_2");
+    }
+
+    public void setDialogue(){
+        dialogues[0] = "Hello, lad.";
+        dialogues[1] = "Welcome to pallet town!";
+        dialogues[2] = "Do you have your first pokemon?";
+        dialogues[3] = "No! Then you should go meet Prof.Oak.";
     }
 
     public void setAction(){
@@ -42,6 +50,21 @@ public class NPC_OldMan extends Entity{
             actionLockCounter = 0;
         }
 
+    }
+
+    public void speak(){
+        if (dialogues[dialogueIndex] == null || dialogueIndex >= 4){ // change the 4 to the next number after the number of dialogues of the NPC
+            dialogueIndex = 0;
+        }
+        gp.ui.currentDialogue = dialogues[dialogueIndex];
+        dialogueIndex++;
+
+        switch (gp.player.direction) {
+            case "up" -> direction = "down";
+            case "down" -> direction = "up";
+            case "left" -> direction = "right";
+            case "right" -> direction = "left";
+        }
     }
 
 }
