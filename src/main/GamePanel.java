@@ -8,8 +8,7 @@ import tile.TileManager;
 import javax.swing.*;
 import java.awt.*;
 
-public class GamePanel extends JPanel implements Runnable
-{
+public class GamePanel extends JPanel implements Runnable {
     // SCREEN SETTINGS
     final int originalTileSize = 16; // 16x16 tile
     final int scale = 3;
@@ -28,7 +27,7 @@ public class GamePanel extends JPanel implements Runnable
 
     //SYSTEM
     TileManager tileM = new TileManager(this);
-    KeyHandler KeyH = new KeyHandler(this);
+    public KeyHandler KeyH = new KeyHandler(this);
     public CollisionChecker cChecker = new CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
     Sound music = new Sound();
@@ -43,10 +42,11 @@ public class GamePanel extends JPanel implements Runnable
 
     //GAME STATE
     public int gameState;
+    public final int titleState = 0;
     public final int playState = 1;
     public final int pauseState = 2;
     public final int dialogueState = 3;
-
+    int titleMusicPlayed = 0;
 
     public GamePanel() {
 
@@ -61,8 +61,7 @@ public class GamePanel extends JPanel implements Runnable
         aSetter.setObject();
         aSetter.setNPC();
 
-        playMusic(0);
-        gameState = playState;
+        gameState = titleState;
     }
 
     public void startGameThread(){
@@ -103,8 +102,12 @@ public class GamePanel extends JPanel implements Runnable
 
     public void update(){
 
+        if (gameState == titleState){
+
+        }
+
         if (gameState == playState){
-            //PLAYER
+
             player.update();
 
             //NPC
@@ -126,29 +129,36 @@ public class GamePanel extends JPanel implements Runnable
 
         Graphics2D g2 = (Graphics2D) g;
 
-        //TILES
-        tileM.draw(g2);
-
-        //OBJECTS
-        for (SuperItems superItems : obj) {
-            if (superItems != null) {
-                superItems.draw(g2, this);
-            }
+        //TITLE SCREEN
+        if (gameState == titleState){
+            ui.draw(g2);
         }
 
-        //NPC
-        for (int i = 0; i < npc.length; i++){
-            if (npc[i] != null){
-                npc[i].draw(g2);
+        //OTHERS
+        else {
+            //TILES
+            tileM.draw(g2);
+
+            //OBJECTS
+            for (SuperItems superItems : obj) {
+                if (superItems != null) {
+                    superItems.draw(g2, this);
+                }
             }
+
+            //NPC
+            for (int i = 0; i < npc.length; i++){
+                if (npc[i] != null){
+                    npc[i].draw(g2);
+                }
+            }
+
+            //PLAYER
+            player.draw(g2);
+
+            //UI
+            ui.draw(g2);
         }
-
-        //PLAYER
-        player.draw(g2);
-
-        //UI
-        ui.draw(g2);
-
 
         g2.dispose();
     }

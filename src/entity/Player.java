@@ -43,6 +43,7 @@ public class Player extends Entity{
     }
 
     public void getPlayerImage(){
+// CHECK IF THE PLAYER WANTS TO BE GIRL OR BOY****
         up1 = setUp("/player/boy_up_1");
         up2 = setUp("/player/boy_up_2");
         down1 = setUp("/player/boy_down_1");
@@ -51,6 +52,7 @@ public class Player extends Entity{
         left2 = setUp("/player/boy_left_2");
         right1 = setUp("/player/boy_right_1");
         right2 = setUp("/player/boy_right_2");
+
     }
 
     public void update(){
@@ -109,9 +111,14 @@ public class Player extends Entity{
 
     public void interactNPC(int i){
         if(i != 999){
+//            if (gp.KeyH.enterPressed){ // If the player wants to talk with the NPC only if the key is pressed.
+//                gp.gameState = gp.dialogueState;
+//                gp.npc[i].speak();
+//            }
             gp.gameState = gp.dialogueState;
             gp.npc[i].speak();
         }
+        gp.KeyH.enterPressed = false;
     }
     public void draw(Graphics2D g2){
 //        g2.setColor(Color.WHITE);

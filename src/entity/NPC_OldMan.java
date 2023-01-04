@@ -31,7 +31,7 @@ public class NPC_OldMan extends Entity{
         dialogues[0] = "Hello, lad.";
         dialogues[1] = "Welcome to pallet town!";
         dialogues[2] = "Do you have your first pokemon?";
-        dialogues[3] = "No! Then you should go meet Prof.Oak.";
+        dialogues[3] = "No!\nThen you should go meet Prof.Oak.";
     }
 
     public void setAction(){
@@ -53,18 +53,10 @@ public class NPC_OldMan extends Entity{
     }
 
     public void speak(){
-        if (dialogues[dialogueIndex] == null || dialogueIndex >= 4){ // change the 4 to the next number after the number of dialogues of the NPC
-            dialogueIndex = 0;
-        }
-        gp.ui.currentDialogue = dialogues[dialogueIndex];
-        dialogueIndex++;
+        //Do the characters specific stuff.
+        // Check if it has pokemon then speak 0 - 3 else speak _ - _
 
-        switch (gp.player.direction) {
-            case "up" -> direction = "down";
-            case "down" -> direction = "up";
-            case "left" -> direction = "right";
-            case "right" -> direction = "left";
-        }
+        super.speak();
     }
 
 }
