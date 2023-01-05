@@ -12,7 +12,7 @@ public class Entity {
 
     GamePanel gp;
     public int worldX, worldY;
-    public int speed;
+    public int speed = 2;
 
     public String name = "";
 

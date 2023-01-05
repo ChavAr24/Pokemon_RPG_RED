@@ -9,7 +9,7 @@ public class Charizard extends Entity{
         super(gp);
 
         direction = "down";
-        speed = 3;
+//        speed = 3;
         name = "Charizard";
 
         getImage();

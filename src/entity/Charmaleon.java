@@ -4,27 +4,27 @@ import main.GamePanel;
 
 import java.util.Random;
 
-public class Bulbasaur extends Entity{
-    public Bulbasaur(GamePanel gp){
+public class Charmaleon extends Entity {
+    public Charmaleon(GamePanel gp){
         super(gp);
 
         direction = "down";
 //        speed = 3;
-        name = "Bulbasaur";
+        name = "Charmaleon";
 
         getImage();
         setDialogue();
     }
 
     public void getImage(){
-        up1 = setUp("/pokemons/Bulbasaur_00");
-        up2 = setUp("/pokemons/Bulbasaur_00");
-        down1 = setUp("/pokemons/Bulbasaur_00");
-        down2 = setUp("/pokemons/Bulbasaur_00");
-        left1 = setUp("/pokemons/Bulbasaur_00");
-        left2 = setUp("/pokemons/Bulbasaur_00");
-        right1 = setUp("/pokemons/Bulbasaur_00");
-        right2 = setUp("/pokemons/Bulbasaur_00");
+        up1 = setUp("/pokemons/Charmaleon_00");
+        up2 = setUp("/pokemons/Charmaleon_00");
+        down1 = setUp("/pokemons/Charmaleon_00");
+        down2 = setUp("/pokemons/Charmaleon_00");
+        left1 = setUp("/pokemons/Charmaleon_00");
+        left2 = setUp("/pokemons/Charmaleon_00");
+        right1 = setUp("/pokemons/Charmaleon_00");
+        right2 = setUp("/pokemons/Charmaleon_00");
     }
 
     public void setDialogue(){
@@ -59,3 +59,5 @@ public class Bulbasaur extends Entity{
 //        super.speak();
     }
 }
+
+

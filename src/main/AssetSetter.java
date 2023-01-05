@@ -1,9 +1,6 @@
 package main;
 
-import entity.Bulbasaur;
-import entity.Charizard;
-import entity.NPC_OldMan;
-import entity.NPC_npc00;
+import entity.*;
 import object.Item_Pokeball;
 import object.Item_Potion;
 
@@ -42,6 +39,10 @@ public class AssetSetter {
         gp.pokemons[1] = new Charizard(gp);
         gp.pokemons[1].worldX = gp.tileSize * 24;
         gp.pokemons[1].worldY = gp.tileSize * 38;
+
+        gp.pokemons[2] = new Charmaleon(gp);
+        gp.pokemons[2].worldX = gp.tileSize * 26;
+        gp.pokemons[2].worldY = gp.tileSize * 36;
 
     }
 }

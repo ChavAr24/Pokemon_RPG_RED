@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ea8581-d2f7-464b-bb31-7146f4a720ae" name="Changes" comment="Events added&#10;&#10;changed a couple of things such as the objects are now an entity.">
-      <change afterPath="$PROJECT_DIR$/res/pokemons/Bulbasaur_00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Bulbasaur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Charizard.java" afterDir="false" />
+    <list default="true" id="c6ea8581-d2f7-464b-bb31-7146f4a720ae" name="Changes" comment="2 temporary pokemons added">
+      <change afterPath="$PROJECT_DIR$/res/pokemons/Charmaleon_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Charmaleon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/WildPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/pokemons/Charizard__00.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/pokemons/Charizard_00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Bulbasaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Bulbasaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Charizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Charizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672878355470</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2 temporary pokemons added">
+      <created>1672899291179</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672899291179</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +151,7 @@
     <MESSAGE value="NPC dialogues added&#10;&#10;The dialogue overflows out of the window. will fix in next upload." />
     <MESSAGE value="Title screen added" />
     <MESSAGE value="Events added&#10;&#10;changed a couple of things such as the objects are now an entity." />
-    <option name="LAST_COMMIT_MESSAGE" value="Events added&#10;&#10;changed a couple of things such as the objects are now an entity." />
+    <MESSAGE value="2 temporary pokemons added" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 temporary pokemons added" />
   </component>
 </project>
