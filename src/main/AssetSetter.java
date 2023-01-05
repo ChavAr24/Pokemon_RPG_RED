@@ -1,5 +1,7 @@
 package main;
 
+import entity.Bulbasaur;
+import entity.Charizard;
 import entity.NPC_OldMan;
 import entity.NPC_npc00;
 import object.Item_Pokeball;
@@ -30,5 +32,16 @@ public class AssetSetter {
         gp.npc[1] = new NPC_npc00(gp);
         gp.npc[1].worldX = gp.tileSize * 9;
         gp.npc[1].worldY = gp.tileSize * 8;
+    }
+
+    public void setWildPokemon(){
+        gp.pokemons[0] = new Bulbasaur(gp);
+        gp.pokemons[0].worldX = gp.tileSize * 20;
+        gp.pokemons[0].worldY = gp.tileSize * 38;
+
+        gp.pokemons[1] = new Charizard(gp);
+        gp.pokemons[1].worldX = gp.tileSize * 24;
+        gp.pokemons[1].worldY = gp.tileSize * 38;
+
     }
 }

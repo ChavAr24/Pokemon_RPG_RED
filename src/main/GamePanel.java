@@ -43,6 +43,7 @@ public class GamePanel extends JPanel implements Runnable {
     public Entity[] obj = new Entity[100];
     public Entity[] npc = new Entity[100];
     ArrayList<Entity> entityList = new ArrayList<>();
+    public Entity[] pokemons = new Entity[100];
 
     //GAME STATE
     public int gameState;
@@ -65,6 +66,7 @@ public class GamePanel extends JPanel implements Runnable {
     public void setUpGame() {
         aSetter.setObject();
         aSetter.setNPC();
+        aSetter.setWildPokemon();
 
         gameState = titleState;
     }
@@ -126,6 +128,13 @@ public class GamePanel extends JPanel implements Runnable {
                     npc[i].update();
                 }
             }
+
+            //POKEMONS
+            for (int i = 0; i < pokemons.length; i++){
+                if (pokemons[i] != null){
+                    pokemons[i].update();
+                }
+            }
             //
         }
         if (gameState == pauseState){
@@ -152,7 +161,8 @@ public class GamePanel extends JPanel implements Runnable {
             // ADD ENTITIES TO THE LIST
             entityList.add(player);
             for (int i = 0; i < npc.length; i++) if (npc[i] != null){entityList.add(npc[i]);}
-            for (int i = 0; i < npc.length; i++) if (obj[i] != null) {entityList.add(obj[i]);}
+            for (int i = 0; i < obj.length; i++) if (obj[i] != null) {entityList.add(obj[i]);}
+            for (int i = 0; i < pokemons.length; i++) if (pokemons[i] != null) {entityList.add(pokemons[i]);}
             // SORT
             Collections.sort(entityList, new Comparator<Entity>() {
                 @Override

@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ea8581-d2f7-464b-bb31-7146f4a720ae" name="Changes" comment="Title screen added">
-      <change afterPath="$PROJECT_DIR$/res/player/girl_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/girl_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/girl_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/girl_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/girl_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/girl_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/girl_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/girl_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/NPC_npc00.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/EventRect.java" afterDir="false" />
+    <list default="true" id="c6ea8581-d2f7-464b-bb31-7146f4a720ae" name="Changes" comment="Events added&#10;&#10;changed a couple of things such as the objects are now an entity.">
+      <change afterPath="$PROJECT_DIR$/res/pokemons/Bulbasaur_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Bulbasaur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Charizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/world001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/world001.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/pokemons/Charizard__00.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/pokemons/Charizard_00.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Item_Antidote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Antidote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Item_Awakening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Awakening.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Item_Masterball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Masterball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Item_Pokeball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Pokeball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Item_Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Potion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Item_Superpotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Superpotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/SuperItems.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,16 +43,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Aryan's/Aryan projects/Java_projects/Pokemon_RPG_RED/res/items"
+    "last_opened_file_path": "C:/Aryan's/Aryan projects/Java_projects/Pokemon_RPG_RED/res/pokemons"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\pokemons" />
       <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\items" />
       <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\player" />
       <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\sound" />
       <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\others" />
-      <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\pokemons" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672809815001</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Events added&#10;&#10;changed a couple of things such as the objects are now an entity.">
+      <created>1672878355470</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672878355470</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +142,7 @@
     <MESSAGE value="NPC and Collision Checking added" />
     <MESSAGE value="NPC dialogues added&#10;&#10;The dialogue overflows out of the window. will fix in next upload." />
     <MESSAGE value="Title screen added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Title screen added" />
+    <MESSAGE value="Events added&#10;&#10;changed a couple of things such as the objects are now an entity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Events added&#10;&#10;changed a couple of things such as the objects are now an entity." />
   </component>
 </project>
