@@ -1,20 +1,14 @@
 package object;
 
+import entity.Entity;
 import main.GamePanel;
 
-import javax.imageio.ImageIO;
-import java.io.IOException;
+public class Item_Antidote extends Entity {
 
-public class Item_Antidote extends SuperItems {
-
-    GamePanel gp;
     public Item_Antidote(GamePanel gp){
+        super(gp);
+
         name = "Antidote";
-        try{
-            image = ImageIO.read(getClass().getResourceAsStream("/items/Antidote_00.png"));
-            uTool.scaledImage(image, gp.tileSize, gp.tileSize);
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+        down1 = setUp("/items/Antidote_00");
     }
 }

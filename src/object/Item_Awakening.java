@@ -1,19 +1,13 @@
 package object;
 
+import entity.Entity;
 import main.GamePanel;
 
-import javax.imageio.ImageIO;
-import java.io.IOException;
-
-public class Item_Awakening extends SuperItems {
-    GamePanel gp;
+public class Item_Awakening extends Entity {
     public Item_Awakening(GamePanel gp){
+        super(gp);
+
         name = "Awakening Potion";
-        try{
-            image = ImageIO.read(getClass().getResourceAsStream("/items/Awakening_00.png"));
-            uTool.scaledImage(image, gp.tileSize, gp.tileSize);
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+        down1 = setUp("/items/Awakening_00");
     }
 }

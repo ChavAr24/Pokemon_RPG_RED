@@ -16,7 +16,7 @@ public class UI {
     public int commandNum = 0;
 
     public UI(GamePanel gp){
-        this.gp = gp;
+        UI.gp = gp;
 
         try {
             InputStream is = getClass().getResourceAsStream("/font/arial.ttf");

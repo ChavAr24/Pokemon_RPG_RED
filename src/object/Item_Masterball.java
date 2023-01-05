@@ -1,20 +1,14 @@
 package object;
 
+import entity.Entity;
 import main.GamePanel;
 
-import javax.imageio.ImageIO;
-import java.io.IOException;
-
-public class Item_Masterball extends SuperItems {
-    GamePanel gp;
+public class Item_Masterball extends Entity {
 
     public Item_Masterball(GamePanel gp){
+        super(gp);
+
         name = "Masterball";
-        try{
-            image = ImageIO.read(getClass().getResourceAsStream("/items/Masterball_00.png"));
-            uTool.scaledImage(image, gp.tileSize, gp.tileSize);
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+        down1 = setUp("/items/Masterball_00");
     }
 }

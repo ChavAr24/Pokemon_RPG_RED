@@ -5,6 +5,7 @@ import main.KeyHandler;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.Objects;
 
 
 public class Player extends Entity{
@@ -12,6 +13,7 @@ public class Player extends Entity{
 
     public final int screenX;
     public final int screenY;
+    public String playerGender = "male"; // default set to male.
 
 
     public Player(GamePanel gp, KeyHandler KeyH){
@@ -40,18 +42,30 @@ public class Player extends Entity{
         worldY = gp.tileSize*21;
         speed = 4;
         direction = "down";
+        name = "Player";
     }
 
     public void getPlayerImage(){
 // CHECK IF THE PLAYER WANTS TO BE GIRL OR BOY****
-        up1 = setUp("/player/boy_up_1");
-        up2 = setUp("/player/boy_up_2");
-        down1 = setUp("/player/boy_down_1");
-        down2 = setUp("/player/boy_down_2");
-        left1 = setUp("/player/boy_left_1");
-        left2 = setUp("/player/boy_left_2");
-        right1 = setUp("/player/boy_right_1");
-        right2 = setUp("/player/boy_right_2");
+        if (Objects.equals(playerGender, "male")) {
+            up1 = setUp("/player/boy_up_1");
+            up2 = setUp("/player/boy_up_2");
+            down1 = setUp("/player/boy_down_1");
+            down2 = setUp("/player/boy_down_2");
+            left1 = setUp("/player/boy_left_1");
+            left2 = setUp("/player/boy_left_2");
+            right1 = setUp("/player/boy_right_1");
+            right2 = setUp("/player/boy_right_2");
+        } else if (Objects.equals(playerGender, "female")) {
+            up1 = setUp("/player/girl_up_1");
+            up2 = setUp("/player/girl_up_2");
+            down1 = setUp("/player/girl_down_1");
+            down2 = setUp("/player/girl_down_2");
+            left1 = setUp("/player/girl_left_1");
+            left2 = setUp("/player/girl_left_2");
+            right1 = setUp("/player/girl_right_1");
+            right2 = setUp("/player/girl_right_2");
+        }
 
     }
 
@@ -81,6 +95,9 @@ public class Player extends Entity{
 //            CHECK NPC COLLISION
             int npcIndex = gp.cChecker.checkEntity(this, gp.npc);
             interactNPC(npcIndex);
+
+//            CHECK EVENTS
+            gp.eHandler.checkEvent();
 
 
 //            IF COLLISION IS FALSE, PLAYER CAN'T MOVE
@@ -117,6 +134,7 @@ public class Player extends Entity{
 //            }
             gp.gameState = gp.dialogueState;
             gp.npc[i].speak();
+            System.out.println("Speaking with NPC: " + gp.npc[i].name);
         }
         gp.KeyH.enterPressed = false;
     }

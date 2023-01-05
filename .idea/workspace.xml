@@ -4,67 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ea8581-d2f7-464b-bb31-7146f4a720ae" name="Changes" comment="NPC dialogues added&#10;&#10;The dialogue overflows out of the window. will fix in next upload.">
-      <change afterPath="$PROJECT_DIR$/res/backgrounds/titleBackground_00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ARIALN.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ARIALNB.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ARIALNBI.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ARIALNI.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ARIALUNI.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ARLRDBD.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/BELL.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/BELLB.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/BELLI.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/BRLNSB.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/BRLNSDB.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/BRLNSR.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/BRUSHSCI.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ITCEDSCR.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/arial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/arialbd.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/arialbi.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ariali.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/ariblk.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/calibri.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/calibrib.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/calibrii.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/calibril.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/calibrili.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/calibriz.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/cambria.ttc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/cambriab.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/cambriai.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/cambriaz.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/comic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/comicbd.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/comici.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/comicz.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/dosapp.fon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/pokemon_fire_red.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/sanss___.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/sanssb__.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/sansso__.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/sserife.fon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/terminal.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/times.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/timesbd.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/timesbi.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/timesi.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/others/arrow__0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/pokemons/Charizard__00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/pallettown_00.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c6ea8581-d2f7-464b-bb31-7146f4a720ae" name="Changes" comment="Title screen added">
+      <change afterPath="$PROJECT_DIR$/res/player/girl_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/girl_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/girl_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/girl_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/girl_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/girl_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/girl_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/girl_up_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/NPC_npc00.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/EventRect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_RPG_RED.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_RPG_Dark_Red.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/maps/world001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/world001.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UtilityTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UtilityTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Item_Antidote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Antidote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Item_Awakening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Awakening.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Item_Masterball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Masterball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Item_Pokeball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Pokeball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Item_Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Item_Superpotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item_Superpotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/SuperItems.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,35 +62,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Aryan's/Aryan projects/Java_projects/Pokemon_RPG_RED/res/sound"
+    "last_opened_file_path": "C:/Aryan's/Aryan projects/Java_projects/Pokemon_RPG_RED/res/items"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\items" />
+      <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\player" />
       <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\sound" />
       <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\others" />
       <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\pokemons" />
-      <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\backgrounds" />
-      <recent name="C:\Aryan's\Aryan projects\Java_projects\Pokemon_RPG_RED\res\font" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Pokemon_RPG_Dark_Red" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Pokemon_RPG_Dark_Red" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Pokemon_RPG_Dark_Red" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672785355391</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Title screen added">
+      <created>1672809815001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672809815001</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +153,7 @@
     <MESSAGE value="Game State Added" />
     <MESSAGE value="NPC and Collision Checking added" />
     <MESSAGE value="NPC dialogues added&#10;&#10;The dialogue overflows out of the window. will fix in next upload." />
-    <option name="LAST_COMMIT_MESSAGE" value="NPC dialogues added&#10;&#10;The dialogue overflows out of the window. will fix in next upload." />
+    <MESSAGE value="Title screen added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Title screen added" />
   </component>
 </project>
